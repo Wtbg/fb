@@ -7,14 +7,14 @@ package main
 
 import (
 	"flybitch/app"
-	// "flybitch/model"
+	"flybitch/model"
 
 	"github.com/sirupsen/logrus"
 )
 
 func main() {
 	logrus.SetReportCaller(true)
-	// model.Init()
+	model.Init()
 	app.InitWebFramework()
 	app.StartServer()
 }
