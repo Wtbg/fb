@@ -7,6 +7,6 @@ import (
 
 func addRoutes() {
 	api := e.Group("api")
-	api.Use(middleware.Login)
+	api.Use(middleware.Auth)
 	api.GET("/ping", controller.Ping)
 }
